@@ -8,20 +8,11 @@
 	mc:Ignorable="d"
 	Background="{ThemeResource BackgroundBrush}">
 
-    <Page.Resources>
-    </Page.Resources>
-
     <StackPanel HorizontalAlignment="Center"
-				VerticalAlignment="Center">
+				VerticalAlignment="Center" Spacing="8">
         <TextBlock AutomationProperties.AutomationId="HelloTextBlock"
 					Text="Hello Uno Platform X" 
 					HorizontalAlignment="Center" />
-
-        <utu:Card HeaderContent="Header" Margin="1,3,0,3"
-                SubHeaderContent="SubHeader"
-                AvatarContent="ms-appx:///UnoApp5/Assets/Icons/about40x40.png"
-                Style="{StaticResource AvatarOutlinedCardStyle}" IsTabStop="False">
-        </utu:Card>
 
         <Button Command="{x:Bind CommandOn}">On</Button>
         <Button Command="{x:Bind TheCommand}">Button</Button>
